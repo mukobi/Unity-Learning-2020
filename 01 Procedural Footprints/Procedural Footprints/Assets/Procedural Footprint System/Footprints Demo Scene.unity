@@ -347,7 +347,9 @@ MonoBehaviour:
   distanceBetweenFootsteps: 0.42
   footprintWorldHeight: 0.001
   checkIntervalFrames: 1
-  maxNumFootprints: 128
+  OnFootstepAtLocation:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!23 &2136223066
 MeshRenderer:
   m_ObjectHideFlags: 0

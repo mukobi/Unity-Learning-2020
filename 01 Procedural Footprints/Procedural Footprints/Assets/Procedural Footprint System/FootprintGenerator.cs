@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
 public class UnityEventVector3 : UnityEvent<Vector3> { };
 
 public class FootprintGenerator : MonoBehaviour
@@ -118,5 +119,6 @@ public class FootprintGenerator : MonoBehaviour
         GameObject instantiatedFootprint = Instantiate(prefabToInstantiate, targetPosition, targetRotation);
         placedFootprints.Add(instantiatedFootprint);
         lastFootprintPosition = targetPosition;
+        OnFootstepAtLocation?.Invoke(targetPosition);
     }
 }
