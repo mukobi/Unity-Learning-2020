@@ -27,9 +27,6 @@ public class FootprintGenerator : MonoBehaviour
     [Tooltip("Number of frames between footprint generation calculations (for performance).")]
     [SerializeField] private int checkIntervalFrames = 1;
 
-    [Tooltip("Maximum number of footprints before old ones are erased.")]
-    [SerializeField] private int maxNumFootprints = 128;
-
     [Tooltip("You might use this for footstep sounds.")]
     public UnityEventVector3 OnFootstepAtLocation;
 
